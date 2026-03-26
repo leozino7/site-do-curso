@@ -7,6 +7,12 @@ body{
     scroll-behavior:smooth;
 }
 
+header img{
+    width: 350px;
+    padding: 0;
+    margin: 0;
+}
+
 .hero{
     text-align:center;
     padding:100px 20px;
@@ -252,6 +258,27 @@ body.sos {
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+/* Container que junta logo (imagem + texto) */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Remove espaçamentos da imagem */
+.logo img {
+    width: 30px; /* mantém tamanho original */
+    margin: 0;
+    padding: 0 0 8px;
+    display: block; /* elimina espaço extra em linha */
+}
+
+/* Espaçamento controlado entre imagem e texto */
+.logo h1 {
+    color: white;
+    font-size: 22px;
+    margin-left: 8px; /* ajuste para aproximar ou afastar */
 }
 
 .navbar h1 {
