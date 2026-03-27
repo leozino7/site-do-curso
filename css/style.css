@@ -254,6 +254,63 @@ body.sos {
     z-index: 1000;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 6px; /* distância exata entre logo e texto */
+}
+
+.logo-container img {
+    width: 30px; /* tamanho do logo */
+    height: auto;
+    padding: 0 0 8px;
+}
+
+.logo-container h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0; /* remove margem padrão */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
+}
+
+.admin-btn {
+    background: #00d4ff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: black !important;
+}
+
+.admin-btn:hover {
+    background: white;
+}
+
+/* Ajuste para compensar navbar fixa */
+body {
+    padding-top: 80px;
+}
+
 .navbar h1 {
     color: white;
     font-size: 22px;
@@ -405,4 +462,9 @@ button {
 
 button:hover {
     background: white;
+}
+
+/* imagens */
+header img{
+    width: 350px ;
 }

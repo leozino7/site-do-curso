@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Altus Tech</title>
-<link rel="stylesheet" href="./css/style.css">
-<script defer src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altus Tech</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
 
-<header class="hero">
-    <h1>ALTUS TECH</h1>
-    <p>Tecnologia Autônoma • Inteligência Artificial • Sustentabilidade</p>
-    <a href="#produtos" class="btn">Conheça Nossas Soluções</a>
-</header>
+    <header class="hero">
+        <img src="./img/logo com o nome.png" alt="">
+        <p>Tecnologia Autônoma • Inteligência Artificial • Sustentabilidade</p>
+        <a href="#produtos" class="btn">Conheça Nossas Soluções</a>
+    </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#contato">Contato</a>
-</nav>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-<section id="sobre" class="fade">
-    <h2>Sobre a Empresa</h2>
-    <div class="card">
-        <p>
-          Altus Tech é uma empresa de tecnologia voltada à inovação, ao desenvolvimento de soluções inteligentes e à transformação digital. Atua com tecnologias avançadas, como drones e robôs, oferecendo serviços modernos e eficientes para diferentes necessidades. <br>
-           O nome Altus Tech representa a essência da empresa: “Altus”, de origem latina, significa alto, fazendo referência à atuação com drones e à busca por elevar o nível tecnológico dos clientes; já “Tech” está relacionado à tecnologia, destacando o uso de robôs e sistemas inovadores
-        
-        </p>
+    <section id="sobre" class="fade">
+        <h2>Sobre a Empresa</h2>
+        <div class="card">
+            <p>
+                Altus Tech é uma empresa de tecnologia voltada à inovação, ao desenvolvimento de soluções inteligentes e
+                à transformação digital. Atua com tecnologias avançadas, como drones e robôs, oferecendo serviços
+                modernos e eficientes para diferentes necessidades. <br>
+                O nome Altus Tech representa a essência da empresa: “Altus”, de origem latina, significa alto, fazendo
+                referência à atuação com drones e à busca por elevar o nível tecnológico dos clientes; já “Tech” está
+                relacionado à tecnologia, destacando o uso de robôs e sistemas inovadores
+
+            </p>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="grid">
+
+            <div class="card fade">
+                <h3>Drone de Entrega</h3>
+                <p>Entrega autônoma com IA e monitoramento em tempo real.</p>
+                <a href="produtos/drone-entrega.html" class="btn-small">Ver Mais</a>
+            </div>
+
+            <div class="card fade">
+                <h3>Sistema de Compras</h3>
+                <p>Automação inteligente de estoque e fornecedores.</p>
+                <a href="produtos/compras.html" class="btn-small">Ver Mais</a>
+            </div>
+
+            <div class="card fade">
+                <h3>BioLoop Drones</h3>
+                <p>Regeneração ambiental com microcápsulas biodegradáveis.</p>
+                <a href="produtos/bioloop.html" class="btn-small">Ver Mais</a>
+            </div>
+
+            <div class="card fade">
+                <h3>FireWatch Cloud</h3>
+                <p>Detecção precoce de incêndios com IA.</p>
+                <a href="produtos/firewatch.html" class="btn-small">Ver Mais</a>
+            </div>
+
+            <div class="card fade">
+                <h3>Drone SOS</h3>
+                <p>Suporte emergencial em desastres naturais.</p>
+                <a href="produtos/dronesos.html" class="btn-small">Ver Mais</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form id="formContato" class="card">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+            <p id="msgStatus"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Altus Tech © 2025</p>
+    </footer>
+
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo">
+            <h1>Altus Tech</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../index.html#produtos">Produtos</a></li>
+            <li><a href="../investidores.html">Investidores</a></li>
+            <li><a href="../admin/login.html" class="admin-btn">Área Administrativa</a></li>
+        </ul>
     </div>
-</section>
-
-<section id="produtos">
-    <h2>Nossos Produtos</h2>
-
-    <div class="grid">
-
-        <div class="card fade">
-            <h3>Drone de Entrega</h3>
-            <p>Entrega autônoma com IA e monitoramento em tempo real.</p>
-            <a href="produtos/drone-entrega.html" class="btn-small">Ver Mais</a>
-        </div>
-
-        <div class="card fade">
-            <h3>Sistema de Compras</h3>
-            <p>Automação inteligente de estoque e fornecedores.</p>
-            <a href="produtos/compras.html" class="btn-small">Ver Mais</a>
-        </div>
-
-        <div class="card fade">
-            <h3>BioLoop Drones</h3>
-            <p>Regeneração ambiental com microcápsulas biodegradáveis.</p>
-            <a href="produtos/bioloop.html" class="btn-small">Ver Mais</a>
-        </div>
-
-        <div class="card fade">
-            <h3>FireWatch Cloud</h3>
-            <p>Detecção precoce de incêndios com IA.</p>
-            <a href="produtos/firewatch.html" class="btn-small">Ver Mais</a>
-        </div>
-
-        <div class="card fade">
-            <h3>Drone SOS</h3>
-            <p>Suporte emergencial em desastres naturais.</p>
-            <a href="produtos/dronesos.html" class="btn-small">Ver Mais</a>
-        </div>
-
-    </div>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-
-    <form id="formContato" class="card">
-        <input type="text" id="nome" placeholder="Seu Nome" required>
-        <input type="email" id="email" placeholder="Seu Email" required>
-        <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-        <p id="msgStatus"></p>
-    </form>
-</section>
-
-<footer>
-    <p>Altus Tech © 2025</p>
-</footer>
-
-<div class="navbar">
-    <h1>Altus Tech</h1>
-
-    <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="../index.html#produtos">Produtos</a></li>
-        <li><a href="../investidores.html">Investidores</a></li>
-        <li><a href="../admin/login.html" class="admin-btn">Área Administrativa</a></li>
-    </ul>
-</div>
 
 </body>
