@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altus Tech</title>
+
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/script.js"></script>
@@ -12,33 +13,52 @@
 
 <body>
 
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo">
+            <h1>Altus Tech</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="admin/login.html" class="admin-btn">Área Administrativa</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
     <header class="hero">
-        <img src="./img/logo com o nome.png" alt="">
-        <p>Tecnologia Autônoma • Inteligência Artificial • Sustentabilidade</p>
-        <a href="#produtos" class="btn">Conheça Nossas Soluções</a>
+        <img src="./img/logo com o nome.png" alt="Logo Altus Tech">
+
+        <p>
+            Tecnologia Autônoma • Inteligência Artificial • Sustentabilidade
+        </p>
+
+        <a href="#produtos" class="btn">
+            Conheça Nossas Soluções
+        </a>
     </header>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
+    <!-- SOBRE -->
     <section id="sobre" class="fade">
         <h2>Sobre a Empresa</h2>
+
         <div class="card">
             <p>
                 Altus Tech é uma empresa de tecnologia voltada à inovação, ao desenvolvimento de soluções inteligentes e
                 à transformação digital. Atua com tecnologias avançadas, como drones e robôs, oferecendo serviços
-                modernos e eficientes para diferentes necessidades. <br>
-                O nome Altus Tech representa a essência da empresa: “Altus”, de origem latina, significa alto, fazendo
-                referência à atuação com drones e à busca por elevar o nível tecnológico dos clientes; já “Tech” está
-                relacionado à tecnologia, destacando o uso de robôs e sistemas inovadores
-
+                modernos e eficientes para diferentes necessidades.
+                <br><br>
+                O nome Altus Tech representa a essência da empresa: “Altus”, de origem latina, significa alto,
+                fazendo referência à atuação com drones e à busca por elevar o nível tecnológico dos clientes;
+                já “Tech” está relacionado à tecnologia, destacando o uso de robôs e sistemas inovadores.
             </p>
         </div>
     </section>
 
+    <!-- PRODUTOS -->
     <section id="produtos">
         <h2>Nossos Produtos</h2>
 
@@ -77,6 +97,7 @@
         </div>
     </section>
 
+    <!-- CONTATO -->
     <section id="contato">
         <h2>Contato</h2>
 
@@ -84,27 +105,17 @@
             <input type="text" id="nome" placeholder="Seu Nome" required>
             <input type="email" id="email" placeholder="Seu Email" required>
             <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+
             <button type="submit" class="btn">Enviar</button>
             <p id="msgStatus"></p>
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>Altus Tech © 2025</p>
     </footer>
 
-    <div class="navbar">
-        <div class="logo-container">
-            <img src="./img/logo.png" alt="Logo">
-            <h1>Altus Tech</h1>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="../index.html#produtos">Produtos</a></li>
-            <li><a href="../investidores.html">Investidores</a></li>
-            <li><a href="../admin/login.html" class="admin-btn">Área Administrativa</a></li>
-        </ul>
-    </div>
-
 </body>
+
+</html>
