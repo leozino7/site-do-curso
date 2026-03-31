@@ -1,246 +1,36 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-
-body{
-    font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
-    scroll-behavior:smooth;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero{
-    text-align:center;
-    padding:100px 20px;
-    background:rgba(0,0,0,0.5);
-}
-
-.hero h1{
-    font-size:3rem;
-    letter-spacing:4px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-}
-
-nav a{
-    color:#00f2ff;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-section{
-    padding:80px 10%;
-}
-
-h2{
-    margin-bottom:40px;
-    border-left:5px solid #00f2ff;
-    padding-left:15px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgba(255,255,255,0.08);
-    padding:25px;
-    border-radius:15px;
-    backdrop-filter:blur(10px);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.btn, .btn-small{
-    display:inline-block;
-    background:#00f2ff;
-    color:black;
-    padding:10px 20px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:15px;
-    font-weight:bold;
-}
-
-input, textarea{
-    width:100%;
-    padding:10px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:8px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:rgba(0,0,0,0.8);
-}
-
-/* ANIMAÇÃO */
-.fade{
-    opacity:0;
-    transform:translateY(30px);
-    transition:1s;
-}
-
-.fade.show{
-    opacity:1;
-    transform:translateY(0);
-}
-/* FUNDO DIFERENTE PARA CADA PRODUTO */
-
-body.drone {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-}
-
-body.compras {
-    background: linear-gradient(135deg, #134e5e, #71b280);
-}
-
-body.bioloop {
-    background: linear-gradient(135deg, #0f9b0f, #000000);
-}
-
-body.firewatch {
-    background: linear-gradient(135deg, #8e0e00, #1f1c18);
-}
-
-body.sos {
-    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
-}
-
-/* ANIMAÇÃO DE ENTRADA */
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    animation: aparecer 1.2s ease forwards;
-}
-
-@keyframes aparecer {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ÁREA INVESTIDORES */
-
-.investidores {
-    margin-top: 40px;
-    padding: 20px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 12px;
-}
-/* ÁREA ADMIN */
-
-.admin-body {
-    background: #0f2027;
+/* BODY */
+body {
     font-family: Arial, sans-serif;
-}
-
-.admin-container {
-    display: flex;
-    min-height: 100vh;
-}
-
-.sidebar {
-    width: 250px;
-    background: #1c1c1c;
-    padding: 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
+    scroll-behavior: smooth;
+    padding-top: 80px; /* compensação navbar fixa */
 }
 
-.sidebar h2 {
+/* HERO */
+.hero {
     text-align: center;
-    margin-bottom: 30px;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 6px;
-    transition: 0.3s;
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
 }
 
-.sidebar a:hover {
-    background: #00d4ff;
-    color: black;
-}
-
-.dashboard {
-    flex: 1;
-    padding: 40px;
-    color: white;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.admin-card {
-    background: #1f1f1f;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-}
-
-.admin-card h3 {
-    font-size: 28px;
-    margin: 10px 0;
-}
-
-/* LOGIN */
-
-.login-box {
+header img {
     width: 350px;
-    margin: 150px auto;
-    background: #1c1c1c;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
 }
 
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: none;
-}
-
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background: #00d4ff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.login-box button:hover {
-    background: white;
-}
 /* NAVBAR */
-
 .navbar {
     width: 100%;
     background: #111;
@@ -256,32 +46,25 @@ body.sos {
 
 .logo-container {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
-    gap: 6px; /* distância exata entre logo e texto */
+    align-items: center;
+    gap: 6px;
 }
 
 .logo-container img {
-    width: 30px; /* tamanho do logo */
+    width: 30px;
     height: auto;
-    padding: 0 0 8px;
+    padding-bottom: 8px;
 }
 
 .logo-container h1 {
-    color: white;
     font-size: 22px;
-    margin: 0; /* remove margem padrão */
+    color: white;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px; /* espaçamento entre os links */
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
+    gap: 25px;
 }
 
 .nav-links a {
@@ -306,69 +89,57 @@ body.sos {
     background: white;
 }
 
-/* Ajuste para compensar navbar fixa */
-body {
-    padding-top: 80px;
-}
-
-.navbar h1 {
-    color: white;
-    font-size: 22px;
-}
-
-.navbar ul {
-    list-style: none;
+/* NAV SIMPLES (caso use em outras páginas) */
+nav {
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    color: #00f2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    margin-bottom: 40px;
+    border-left: 5px solid #00f2ff;
+    padding-left: 15px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #00d4ff;
-}
-
-.admin-btn {
-    background: #00d4ff;
-    padding: 8px 15px;
-    border-radius: 6px;
-    color: black !important;
-}
-
-.admin-btn:hover {
-    background: white;
-}
-
-/* Ajuste para compensar navbar fixa */
-
-body {
-    padding-top: 80px;
-}
-/* ANIMAÇÃO NOS CARDS DE PRODUTOS */
-
+/* CARDS */
 .card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
     transition: all 0.4s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 
-/* Efeito ao passar o mouse */
 .card:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
 }
 
-/* Efeito de brilho animado */
+/* brilho animado */
 .card::before {
     content: "";
     position: absolute;
@@ -389,13 +160,103 @@ body {
 .card:hover::before {
     top: 100%;
     left: 100%;
-}/* PÁGINA INVESTIDORES */
+}
 
+/* BOTÕES */
+.btn,
+.btn-small {
+    display: inline-block;
+    background: #00f2ff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #00d4ff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: white;
+}
+
+/* FORMULÁRIOS */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ANIMAÇÕES */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: aparecer 1.2s ease forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FUNDOS POR PRODUTO */
+body.drone {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+body.compras {
+    background: linear-gradient(135deg, #134e5e, #71b280);
+}
+
+body.bioloop {
+    background: linear-gradient(135deg, #0f9b0f, #000000);
+}
+
+body.firewatch {
+    background: linear-gradient(135deg, #8e0e00, #1f1c18);
+}
+
+body.sos {
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+}
+
+/* INVESTIDORES */
 .investor-hero {
     background: linear-gradient(135deg, #000428, #004e92);
     padding: 100px 20px;
     text-align: center;
-    color: white;
 }
 
 .investor-section {
@@ -413,7 +274,6 @@ body {
 
 .investor-card {
     background: #1f1f1f;
-    color: white;
     padding: 30px;
     border-radius: 12px;
     width: 250px;
@@ -450,21 +310,85 @@ body {
     background: white;
 }
 
-button {
-    padding: 8px 12px;
-    margin: 5px;
-    border: none;
+/* ADMIN */
+.admin-body {
+    background: #0f2027;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1c1c1c;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
     background: #00d4ff;
-    cursor: pointer;
-    font-weight: bold;
+    color: black;
 }
 
-button:hover {
+.dashboard {
+    flex: 1;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.admin-card h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* LOGIN */
+.login-box {
+    width: 350px;
+    margin: 150px auto;
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box input {
+    margin: 10px 0;
+}
+
+.login-box button {
+    width: 100%;
+}
+
+.login-box button:hover {
     background: white;
-}
-
-/* imagens */
-header img{
-    width: 350px ;
 }
