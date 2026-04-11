@@ -384,6 +384,7 @@ body {
     );
     transform: rotate(25deg);
     transition: 0.6s;
+    pointer-events: none;
 }
 
 .card:hover::before {
